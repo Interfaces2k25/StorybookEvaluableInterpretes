@@ -14,7 +14,7 @@ export default {
 //Datos de ejemplo historias
 export const Default = {
   args:{
-    foto: "https://example.com/foto.jpg",
+    foto: "https://upload.wikimedia.org/wikipedia/commons/thumb/0/0c/Jodie_Foster-8667.jpg/500px-Jodie_Foster-8667.jpg",
     nombre: "Nombre del Intérprete",
     esNota10: false,
     children: "Breve biografía o descripción del intérprete."
