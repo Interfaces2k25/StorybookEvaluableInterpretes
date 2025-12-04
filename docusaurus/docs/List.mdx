@@ -1,0 +1,71 @@
+---
+id: List
+title: Tarjeta del intérprete
+---
+
+import List from '../src/components/List';
+
+
+# Tarjeta del intérprete
+
+## Descripción general
+
+El componente **List** muestra información sobre un intérprete de una película. Representa una tarjeta visual organizada con imagen, nombre y una descripción o biografía opcional.
+
+---
+
+## Ejemplos
+
+### Bruce Willis
+<List
+nombre = "Bruce Willis"
+esNota10 = {false}
+foto = "https://upload.wikimedia.org/wikipedia/commons/thumb/c/c4/Bruce_Willis_by_Gage_Skidmore_3.jpg/330px-Bruce_Willis_by_Gage_Skidmore_3.jpg"
+>
+Bruce Willis es un actor, productor y cantante estadounidense conocido por su papel en 'Jungla de cristal' y 'El sexto sentido'.
+</List>
+
+---
+
+### Tom Hanks - Intérprete destacado
+<List
+nombre = "Tom Hanks"
+esNota10 = {true}
+foto = "https://upload.wikimedia.org/wikipedia/commons/thumb/3/39/TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg/330px-TomHanksPrincEdw031223_%2811_of_41%29_%28cropped%29.jpg"
+>
+Tom Hanks es un actor estadounidense ganador del Óscar por interpretar a Forrest Gump.
+</List>
+
+---
+
+### Miryam Gallego - Biografía larga
+<List
+nombre = "Miryam Gallego"
+esNota10 = {false}
+foto = "https://upload.wikimedia.org/wikipedia/commons/thumb/7/74/Miryam_Gallego.jpg/330px-Miryam_Gallego.jpg"
+>
+Miryam Gallego es una actriz española conocida por su papel de Lucrecia en la serie 'Águila Roja', así como por sus trabajos en televisión, teatro y cine. Ha participado también en producciones como 'Periodistas' y 'Estoy vivo'.
+</List>
+
+---
+
+## 🧱 Estructura y comportamiento
+
+El componente renderiza un bloque `<article>` que funciona como tarjeta informativa.  
+Dentro se incluyen:
+
+- Una imagen (`<img>`) contenida en un `<figure>`.
+- El nombre del intérprete dentro de un `<header>`.
+- El contenido adicional (biografía, descripción, etc.) en un `<p>`.
+
+---
+
+## 🛡️ Accesibilidad
+
+El componente tiene varias mejoras de accesibilidad:
+
+- `tabIndex="0"` ➜ La tarjeta es navegable con teclado.
+- `aria-label` ➜ Describe el intérprete para lectores de pantalla, añadiendo contexto si es destacado.
+- `<figcaption class="sr-only">` ➜ Contiene el texto adicional para accesibilidad sin mostrarse visualmente.
+
+---
